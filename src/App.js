@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import NavigationBar from "./components/Navbar";
 import Hero from "./section/Hero";
 import Projects from "./section/Projects";
 import About from "./section/About";
@@ -7,10 +7,10 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="dark:bg-gray-900">
-      <Navbar />
+      <NavigationBar />
       <Hero />
-      <Projects />
       <About />
+      <Projects />
       <Footer />
     </div>
   );

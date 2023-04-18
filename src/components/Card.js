@@ -1,15 +1,13 @@
 const Card = (props) => {
   return (
     <div className="max-w-sm my-4 mx-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href={props.url}>
         <img className="rounded-t-lg" src={props.img} alt={props.title} />
       </a>
       <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {props.title}
-          </h5>
-        </a>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {props.title}
+        </h5>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {props.description}
         </p>
